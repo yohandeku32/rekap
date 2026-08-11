@@ -1,6 +1,6 @@
 import { connect } from "@tidbcloud/serverless";
- 
-export default async function handler() {
+
+export async function GET() {
   try {
     if (!process.env.DATABASE_URL) {
       return Response.json(
