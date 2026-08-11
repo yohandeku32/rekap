@@ -1,5 +1,5 @@
 import { connect } from "@tidbcloud/serverless";
-
+ 
 export default async function handler() {
   try {
     if (!process.env.DATABASE_URL) {
